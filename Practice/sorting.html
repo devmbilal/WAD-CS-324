@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sorting Algorithms</title>
+  </head>
+  <body>
+    <button id="generateButton">Generate Numbers</button>
+    <div id="unsorted"></div>
+    <button id="quickSortButton">Quick Sort</button>
+    <button id="mergeSortButton">Merge Sort</button>
+    <button id="bubbleSortButton">Bubble Sort</button>
+    <div id="sorted"></div>
+
+    <script src="sorting.js"></script>
+    <script>
+      document
+        .getElementById("generateButton")
+        .addEventListener("click", function () {
+          numbers = generateRandomNumbers();
+          displayNumbers(numbers, "unsorted");
+        });
+    </script>
+  </body>
+</html>
